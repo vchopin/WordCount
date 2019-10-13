@@ -2,11 +2,15 @@ characters: 93
 words: 6
 lines: 6
 
-file1234 file1234 hello dsfdsfsd5421 : 1
-file1234 hello dsfdsfsd5421 windows95 : 1
-hello dsfdsfsd5421 windows95 windows98 : 1
-dsfdsfsd5421 windows95 windows98 windows2000 : 1
+file1234 file1234 hello : 1
+file1234 hello dsfdsfsd5421 : 1
+hello dsfdsfsd5421 windows95 : 1
+dsfdsfsd5421 windows95 windows98 : 1
+windows95 windows98 windows2000 : 1
 
 file1234 2
 dsfdsfsd5421 1
 hello 1
+windows2000 1
+windows95 1
+windows98 1

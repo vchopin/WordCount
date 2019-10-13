@@ -1,0 +1,13 @@
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.csprojAssemblyReference.cache
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.Form1.resources
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.Properties.Resources.resources
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.csproj.GenerateResource.cache
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.csproj.CoreCompileInputs.cache
+C:\Users\80486\source\repos\wordCount\wordCounter\bin\Debug\wordCounter.exe.config
+C:\Users\80486\source\repos\wordCount\wordCounter\bin\Debug\wordCounter.exe
+C:\Users\80486\source\repos\wordCount\wordCounter\bin\Debug\wordCounter.pdb
+C:\Users\80486\source\repos\wordCount\wordCounter\bin\Debug\ClassLibrary1.dll
+C:\Users\80486\source\repos\wordCount\wordCounter\bin\Debug\ClassLibrary1.pdb
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.csproj.CopyComplete
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.exe
+C:\Users\80486\source\repos\wordCount\wordCounter\obj\Debug\wordCounter.pdb

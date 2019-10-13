@@ -13,13 +13,18 @@ namespace ClassLibrary1
         string content;
         int lineCount = 0;
         int charactersCount = 0;
+        List<string> lists = new List<string>();
+        public List<string> Lists { get => lists; }
+        public int LineCount { get => lineCount;}
 
         public Core(string content)
         {
             this.content = content;
         }
 
-        List<string> lists = new List<string>();
+        
+
+        
 
         public int GetCharNum()
         {
@@ -32,6 +37,7 @@ namespace ClassLibrary1
                     lines++;
                     if (!string.IsNullOrWhiteSpace(line))
                     {
+                        lineCount++;
                         RegexAndAdd(line);
                     }
                 }
@@ -44,7 +50,6 @@ namespace ClassLibrary1
 
         private void RegexAndAdd(string line)
         {
-            lineCount++;
             string regexStr1 = Regex.Replace(line, @"[^\u0000-\u007F]+", string.Empty);
             charactersCount += regexStr1.Length;//统计每行的字符数 最后只需再加上每行就是总字符数
 
