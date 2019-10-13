@@ -1,6 +1,6 @@
-C:\Users\80486\source\repos\wordCount\wordCount\bin\Debug\wordCount.pdb
-C:\Users\80486\source\repos\wordCount\wordCount\obj\Debug\wordCount.csproj.CoreCompileInputs.cache
-C:\Users\80486\source\repos\wordCount\wordCount\obj\Debug\wordCount.pdb
 C:\Users\80486\source\repos\wordCount\wordCount\bin\Debug\wordCount.exe.config
 C:\Users\80486\source\repos\wordCount\wordCount\bin\Debug\wordCount.exe
+C:\Users\80486\source\repos\wordCount\wordCount\bin\Debug\wordCount.pdb
+C:\Users\80486\source\repos\wordCount\wordCount\obj\Debug\wordCount.csproj.CoreCompileInputs.cache
 C:\Users\80486\source\repos\wordCount\wordCount\obj\Debug\wordCount.exe
+C:\Users\80486\source\repos\wordCount\wordCount\obj\Debug\wordCount.pdb

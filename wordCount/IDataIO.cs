@@ -20,6 +20,8 @@ namespace wordCount
         /// </summary>
         /// <param name="sortedWord"></param>
         /// <param name="maxline"></param>
-        void Print(Dictionary<string,int> sortedWord, int maxline=0);
+        string Print(Dictionary<string,int> sortedWord, int maxline=0, bool show = false);
+
+        void WriteToFile(string path, string content);
     }
 }
