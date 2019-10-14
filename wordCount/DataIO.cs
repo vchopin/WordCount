@@ -32,14 +32,14 @@ namespace wordCount
         /// <param name="maxline"></param>
         public string Print(Dictionary<string, int> sortedWord, int maxline = 0,bool show=false)
         {
-            string printWord = "";
+            StringBuilder printWord = new StringBuilder();
             if (maxline != 0)
             {
                 int i = 0;
                 
                 foreach (KeyValuePair<string, int> item in sortedWord)
                 {
-                    printWord += item.Key + " " + item.Value+"\n";
+                    printWord.AppendFormat("{0} {1}\n", item.Key, item.Value);
                     if(show)
                         Console.WriteLine(printWord);
                     if (i == maxline - 1)
@@ -51,12 +51,12 @@ namespace wordCount
             {
                 foreach (KeyValuePair<string, int> item in sortedWord)
                 {
-                    printWord += item.Key + " " + item.Value+"\n";
-                    if(show)
+                    printWord.AppendFormat("{0} {1}\n", item.Key, item.Value);
+                    if (show)
                         Console.WriteLine(printWord);
                 }
             }
-            return printWord;
+            return printWord.ToString();
         }
 
         public void WriteToFile(string path,string content)

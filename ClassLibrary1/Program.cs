@@ -30,9 +30,30 @@ namespace ClassLibrary1
                     if (string.Equals(args[i], "-o"))//获取-o参数
                         outputPath = args[i + 1];
                     if (string.Equals(args[i], "-m"))//获取-m参数
-                        m = int.Parse(args[i + 1]);
+                    {
+                        try
+                        {
+                            m = int.Parse(args[i + 1]);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("-m后应输入数字");
+                            return;
+                        }
+                    }
+
                     if (string.Equals(args[i], "-n"))//获取-n参数
-                        n = int.Parse(args[i + 1]);
+                    {
+                        try
+                        {
+                            n = int.Parse(args[i + 1]);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("-n后应输入数字");
+                            return;
+                        }
+                    }
                 }
             }
 

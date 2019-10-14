@@ -1,0 +1,7 @@
+ [TestMethod]
+        public void TestMethod9()
+        {
+            string content = File.ReadAllText("test3.txt");
+            ICore core = new Core(content);
+            Assert.AreEqual(46, core.GetCharNum());
+        }

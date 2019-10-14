@@ -61,17 +61,25 @@ namespace ClassLibrary1
 
         public void WriteToFile(string path,string content)
         {
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(path))
+            StreamWriter file = null;
+            try
             {
-                string line = "";
-                using (StringReader sr = new StringReader(content))
+                file = new StreamWriter(path);
+            }
+            catch(ArgumentException)
+            {
+                Console.WriteLine("文件名不正确，请重新输入");
+                return;
+            }
+            string line = "";
+            using (StringReader sr = new StringReader(content))
+            {
+                while ((line = sr.ReadLine()) != null)
                 {
-                    while ((line = sr.ReadLine()) != null)
-                    {
-                        file.WriteLine(line);
-                    }
+                    file.WriteLine(line);
                 }
             }
+            
         }
     }
 }

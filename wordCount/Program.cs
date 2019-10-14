@@ -29,16 +29,36 @@ namespace wordCount
                         inputPath = args[i + 1];
                     if (string.Equals(args[i], "-o"))//获取-o参数
                         outputPath = args[i + 1];
+
                     if (string.Equals(args[i], "-m"))//获取-m参数
-                        m = int.Parse(args[i + 1]);
+                    {
+                        try
+                        {
+                            m = int.Parse(args[i + 1]);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("-m后应输入数字");
+                        }
+                    }
+                        
                     if (string.Equals(args[i], "-n"))//获取-n参数
-                        n = int.Parse(args[i + 1]);
+                    {
+                        try
+                        {
+                            n = int.Parse(args[i + 1]);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("-n后应输入数字");
+                        }
+                    }
                 }
             }
 
 
 
-            string content = File.ReadAllText(inputPath);
+            string content = File.ReadAllText("Sophies World.txt");
             Dictionary<string, int> words = new Dictionary<string, int>();
             Dictionary<string, int> wordsGroup = new Dictionary<string, int>();
             ICore core = new Core(content);
@@ -47,10 +67,10 @@ namespace wordCount
             int wordNum = core.GetWordNum(words);
             words = core.SortAndGetWord(words);
             wordsGroup=GetWordGroup(((Core)core).Lists,m);
-            string wordsGroupContent = "";
+            StringBuilder wordsGroupContent = new StringBuilder();
             foreach (KeyValuePair<string, int> wordsPair in wordsGroup)
             {
-                wordsGroupContent += wordsPair.Key + ": " + wordsPair.Value + "\n";
+                wordsGroupContent.AppendFormat("{0} : {1} \n", wordsPair.Key, wordsPair.Value); 
             }
             string wordsCountContent = io.Print(words, n);
 
@@ -61,7 +81,7 @@ namespace wordCount
                 wordsCountContent;
 
             
-            io.WriteToFile(outputPath, fullContent);
+            io.WriteToFile("output.txt", fullContent);
 
             Console.ReadKey();
         }
